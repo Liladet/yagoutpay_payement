@@ -196,7 +196,7 @@ Provides hosted checkout page
 📚 Technical Specifications
 
 Encryption: AES-256-CBC with static IV
-Merchant ID: 202508080001 (test environment)
+Merchant ID: meid (test environment)
 API Endpoint: YagoutPay transaction API
 Currency: ETB (Ethiopian Birr)
 Country: ETH
