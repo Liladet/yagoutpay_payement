@@ -15,12 +15,12 @@ Get started with YagoutPay integration in your preferred programming environment
 **Install requirements**
 ```bash
 pip install requests cryptography
-Run the Python script
-
-
+```
+## Run the Python script
+```bash
 python yagoutpay_python.py
 ```
-Features
+**Features**
 
 Direct API integration
 
@@ -30,20 +30,21 @@ Order number generation
 
 Error handling
 
-🟩 Node.js Integration
-Install dependencies
+## 🟩 Node.js Integration
 
-
+**Install dependencies**
+```bash
 npm install express axios crypto body-parser dotenv
-Start development server
-
-
+```
+**Start development server**
+```bash
 npm run dev
-Or start production server
-
-
+```
+**Or start production server**
+```bash
 npm start
-Features
+```
+**Features**
 
 Express.js web server
 
@@ -55,17 +56,19 @@ RESTful API endpoints
 
 Beautiful UI/UX design
 
-🔵 C# Integration (.NET)
-Create new MVC project
+## 🔵 C# Integration (.NET)
 
-
+**Create new MVC project**
+```bash
 dotnet new mvc -n YagoutPayIntegration
-Add required NuGet packages
+```
 
-
+**Add required NuGet packages**
+```bash
 dotnet add package System.Security.Cryptography
 dotnet add package Newtonsoft.Json
-Features
+```
+**Features**
 
 ASP.NET MVC implementation
 
@@ -75,16 +78,18 @@ Model binding
 
 Secure encryption handling
 
-🟠 Laravel Integration
-Create new Laravel project
+## 🟠 Laravel Integration
 
-
+**Create new Laravel project**
+```bash
 composer create-project laravel/laravel yagoutpay-integration
-Install dependencies
+```
 
-
+**Install dependencies**
+```bash
 composer require guzzlehttp/guzzle
-Features
+```
+**Features**
 
 PHP Laravel framework
 
@@ -96,19 +101,20 @@ Blade templates
 
 Eloquent models
 
-🔧 Configuration
+**🔧 Configuration**
+
 Environment Variables (.env)
 
-Node.js Example:
-
-env
-
+**Node.js Example:**
+```bash
 PORT=3000
 MERCHANT_ID=yourmid
 ENCRYPTION_KEY=youresckey
 API_URL=your_url
 NODE_ENV=development
-💳 Payment Flow
+```
+## 💳 Payment Flow
+
 Initiation: Client requests payment initiation.
 
 Encryption: Server encrypts payload using AES-256-CBC.
@@ -121,7 +127,8 @@ Callback: Server receives success/failure response.
 
 Confirmation: Client receives payment status.
 
-🛡️ Security Features
+## 🛡️ Security Features
+
 AES-256-CBC encryption
 
 SSL/TLS encryption
@@ -134,40 +141,18 @@ Secure key management
 
 Webhook verification
 
-📋 Request & Response Format
+**📋 Request & Response Format**
+
 Request
-
-json
-
+```bash
 { "merchantId": "mid", "merchantRequest": "enc" }
+```
 Response
-
-json
-
+```bash
 { "status": "Success", "statusMessage": "No Error", "response": "encrypted_response_base64" }
+```
+## 📝 Deployment Checklist
 
-🚨 Error Handling
-Handles common error scenarios:
-
-Network timeouts
-
-Invalid credentials
-
-Encryption failures
-
-API rate limiting
-
-Invalid responses
-
-Test Parameters
-
-Amount: 1.00 ETB
-
-Currency: ETB (Ethiopian Birr)
-
-Country: ETH
-
-📝 Deployment Checklist
 ✅ Update merchant credentials
 ✅ Enable SSL/TLS
 ✅ Configure webhook URLs
@@ -177,13 +162,14 @@ Country: ETH
 ✅ Secure encryption keys
 
 Production Environment Variables
-
-env
+```bash
 MERCHANT_ID=your_production_merchant_id
 ENCRYPTION_KEY=your_production_encryption_key
 API_URL=production_api_url
 NODE_ENV=production
-🌟 Platform Integrations
+```
+## 🌟 Platform Integrations
+
 🐍 Python: Direct API integration with AES-256-CBC encryption
 
 🟩 Node.js: Express server with hosted checkout UI
@@ -192,7 +178,8 @@ NODE_ENV=production
 
 🟠 Laravel: PHP framework
 
-🔍 Core Functionality
+## 🔍 Core Functionality
+
 Processes payments through YagoutPay gateway
 
 Supports multiple payment methods (telebirr, cards, banking)
@@ -203,7 +190,8 @@ Manages payment callbacks and webhooks
 
 Provides hosted checkout page
 
-📚 Technical Specifications
+## 📚 Technical Specifications
+
 Encryption: AES-256-CBC with static IV
 
 Merchant ID: meid (test environment)
@@ -214,7 +202,8 @@ Currency: ETB (Ethiopian Birr)
 
 Country: ETH
 
-✨ Integration Features
+## ✨ Integration Features
+
 Complete payment processing flow
 
 Error handling and logging
@@ -225,7 +214,8 @@ Webhook support for notifications
 
 Order management system
 
-🔒 Security Measures
+## 🔒 Security Measures
+
 Secure encryption implementation
 
 Input validation and sanitization
@@ -234,7 +224,8 @@ Secure credential management
 
 SSL/TLS compatibility
 
-🛠️ Usage
+## 🛠️ Usage
+
 Initialize payment with order details
 
 Encrypt payload using provided key
@@ -245,7 +236,8 @@ Handle response and update records
 
 Process callbacks for status updates
 
-🧪 Test Environment
+## 🧪 Test Environment
+
 Test credentials provided
 
 Sandbox API endpoint available
@@ -254,7 +246,8 @@ Sample payment amounts: 1.00 ETB
 
 Test card numbers available
 
-🚀 Production Requirements
+## 🚀 Production Requirements
+
 Production merchant credentials
 
 SSL certificate
@@ -265,26 +258,28 @@ Proper logging implementation
 
 Webhook endpoint configuration
 
-⚡ Quick Start Commands
-Python Integration (Direct API)
+## ⚡ Quick Start Commands
 
-
+**Python Integration (Direct API)**
+```bash
 python direct.py
-Node.js Integration
-
-
+```
+**Node.js Integration**
+```bash
 node server.js       # Main server
 node checkout.js     # Hosted checkout
-Laravel Integration
-
-
+```
+## Laravel Integration
+```bash
 php artisan serve
 # Default: http://localhost:8000
-C# Integration
-
-
+```
+## C# Integration
+```bash
 dotnet run
 # Hosted Checkout: http://localhost:5273/api/hostedcheckout/test
-📦 Summary
+```
+## 📦 Summary
+
 This system provides complete payment processing integration with the YagoutPay payment gateway across multiple programming platforms.
 Refer to the respective integration folders for detailed implementation.
