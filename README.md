@@ -72,7 +72,7 @@ Environment Variables (.env)
 PORT=3000
 MERCHANT_ID=yourmid
 ENCRYPTION_KEY=youresckey
-API_URL=https://uatcheckout.yagoutpay.com/ms-transaction-core-1-0/apiRedirection/apiIntegration
+API_URL=your_url
 NODE_ENV=development
 
 
